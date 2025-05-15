@@ -1,0 +1,147 @@
+#define _crt_secure_no_warnings 1
+#include<stdio.h>
+#include<string.h>
+#define max 10 //define常量
+
+//int add(int x, int y)
+//{
+//	int z = x + y;
+//	return z;
+//}//加法函数
+
+int main()
+{
+	char wode = 'bsaa';
+	long number1 = 100000;
+	double fff = 3.144;
+	printf("%d\n",sizeof(char));
+	printf("%d\n", sizeof(int));
+	printf("%d\n", sizeof(short));
+	printf("%d\n", sizeof(long));
+	printf("%d\n", sizeof(long long));
+	printf("%d\n", sizeof(float));
+	printf("%d\n", sizeof(double));
+	short maxx = 32767;//2^15-1
+	int maxxx = 2147483647;//2^31-1
+	float jieduan=95.6f;
+	printf("%f\n", jieduan);
+	printf("%d\n", sizeof(long double));//check byte 1 4 2 4 8 4 8//short 2 byte = 16 bit = 0000000000000000--1111111111111111 = 2^16,
+//but nagative number -- 2^15--zero between nagative number and positive number, so 2^15-1 = 32767
+//2147483647 is by the identical theory
+	 
+	//int s1 = 0;
+	//int s2 = 0;
+	//int su = 0;
+	//extern int global;
+	//scanf_s("%d%d",&s1,&s2);
+	//su = s1 + s2+ global;
+	//printf("sum=%d\n",su);//最简单的加法
+	// 
+	//char a1[5] = { 0 };
+	//const int n1 = 4;//const常变量，具有常数属性，实质为变量
+	//scanf("%s", &a1);
+	//printf("%s\n", a1);
+	//int arr[max] = { 0 };
+	//printf("%d\n", max);
+
+	/*enum sex
+	{
+		male,
+		female,
+		secret
+	};
+	enum sex s1 = male;
+	printf("%c\n", s1);
+	printf("%d\n", male);
+	printf("%d\n", female);
+	printf("%d\n", secret);*/ //枚举变量
+
+	//char fu1[] = "abc";//放了'\0',意思是结束标志，如果放在开头那就是输出空气
+	//char fu2[] = {'a','b','c',0};//或者，'\0'
+	//printf("%s\n", fu1);
+	//printf("%s\n", fu2);
+	//printf("%d\n", strlen(fu1));
+	//printf("%d\n",strlen(fu2));
+	
+	//char hei = 'a';
+	//printf("%d\n",hei );//97
+	//printf("c:\\test\\32\\test.c");
+	//printf("%d\n",strlen("c:\test\x72\test.c"));
+	//printf("\x72");//16进制 可以换算为十进制 7*16+2=114 ascii编码
+	//printf("are you \\\\\vok??");
+	
+//	int input = 0;
+//	printf("加入世界\n");
+//	printf("你要好好学习吗？(1/0)>:");
+//	scanf("%d",&input);
+//	if (input == 1)
+//		printf("好offer\n");
+//	else
+//		printf("卖红薯\n");
+//	
+//	int hang = 0;
+//	printf("加入世界\n");
+//	while (hang < 20000)
+//	{
+//		printf("我要敲一行代码:");
+//		hang++;
+//		printf("%d\n",hang);
+//	}
+//	if (hang >= 20000)
+//		printf("好offer来喽！\n");
+//
+//	int yunqi = 0;
+//	int nuli = 0;
+//	printf("加入世界\n");
+//	printf("买彩票\n");
+//	while (nuli < 10)
+//		
+//	{
+//		if (yunqi == 1)
+//		{
+//			printf("中了500万");
+//			nuli = 500;
+//		}
+//		else
+//		{
+//			printf("没有中 ");
+//			printf("老实学习 ");
+//			nuli++;
+//			if (nuli < 10)
+//			{
+//				printf("还是菜鸟\n");
+//			}
+//			else
+//			{
+//				printf("我是大牛\n");
+//			}
+//		}
+//		
+//	}
+//	printf("迎娶白富美");
+//
+//	
+//	int a = 10;
+//	int b = 30;
+//	int c = 0;
+//	c = add(a, b);
+//	printf("%d\n",c);// 加法函数调用
+//
+//int a2 = 0;
+//int ar1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//while (a2 < 10)
+//{
+//	printf("%d ",ar1[a2]);
+//	a2++;
+//}//通过数组下标打印出1-10
+//
+////char ch1[20];
+////float ff1[5]; 
+//
+//int a3 = 1;
+//int b2 = a3 << 2;
+//printf("%d\n",b2);
+	return 0;
+}
+
+
