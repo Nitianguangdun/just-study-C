@@ -153,6 +153,34 @@
 //符号型变量前是有signed的，但是是隐藏的 比如signed int
 //所以也可以定义unsigned int，这样永远都是正数
 //static
+//void test()
+//{
+//	//int z1 = 1;
+//	static int z1 = 1;//static可以修饰局部变量，局部变量的生命周期延长了
+//	z1++;
+//	printf("z1=%d\n", z1);
+//}
+//int main()
+//{
+//	int i = 0;
+//	while (i < 5)
+//	{
+//		test();
+//		i++;
+//	}
+//	return 0;
+//}
+
+//static还可以修饰全局变量，见test_5_12，会改变作用域
+//int main()
+//{
+//	extern int global;
+//	printf("%d\n",global); 
+//	return 0;
+//}
+
+
+
 //struct 结构体关键字
 //union 联合体/共用体
 //typedef 类型定义，比如typedef unsigned int u_int; //于是u_int也有了无符号数的含义了
