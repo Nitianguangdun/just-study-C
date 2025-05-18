@@ -1,0 +1,2 @@
+//int global = 111;
+static int global = 111;
