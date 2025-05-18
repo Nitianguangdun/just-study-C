@@ -146,5 +146,16 @@
 
 //取地址&;访问*;结构.;结构->
 
-//硬盘 内存 高速缓存 寄存器
+//硬盘 内存 高速缓存 寄存器register
+
+//auto 自动 局部变量都是自动变量，而且auto是隐藏的
+
+//符号型变量前是有signed的，但是是隐藏的 比如signed int
+//所以也可以定义unsigned int，这样永远都是正数
+//static
+//struct 结构体关键字
+//union 联合体/共用体
+//typedef 类型定义，比如typedef unsigned int u_int; //于是u_int也有了无符号数的含义了
+//volatile
+//自己定义的变量名是不能跟关键字相同的
 
