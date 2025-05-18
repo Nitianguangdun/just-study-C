@@ -1,2 +1,16 @@
 //int global = 111;
-static int global = 111;
+//static int global = 111;
+
+//int Add(int x, int y)
+//{
+//	int z = 0;
+//	z = x + y;
+//	return z;
+//}
+
+static int Add(int x, int y)
+{
+	int z = 0;
+	z = x + y;
+	return z;
+}
