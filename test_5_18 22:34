@@ -152,7 +152,7 @@
 
 //符号型变量前是有signed的，但是是隐藏的 比如signed int
 //所以也可以定义unsigned int，这样永远都是正数
-//static
+//static //静态
 //void test()
 //{
 //	//int z1 = 1;
@@ -171,11 +171,24 @@
 //	return 0;
 //}
 
-//static还可以修饰全局变量，见test_5_12，会改变作用域
+//static还可以修饰全局变量，见test_5_12，会改变作用域，让静态的全局变量只能在自己所在的源文件里使用
 //int main()
 //{
 //	extern int global;
 //	printf("%d\n",global); 
+//	return 0;
+//}
+
+//static修饰函数，改变函数的作用域--不准确；
+//static修饰函数，改变了函数的链接属性，一个正常的函数是具有外部的链接属性，但是static会改变为内部链接属性
+//extern int Add(int, int);
+//int main()
+//{
+//	int v1 = 20;
+//	int v2 = 30;
+//	int summ = 0;
+//	summ = Add(v1, v2);
+//	printf("summ = %d\n",summ);
 //	return 0;
 //}
 
